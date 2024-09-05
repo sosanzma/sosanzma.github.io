@@ -56,6 +56,11 @@
             border-radius: 4px;
             font-weight: bold;
         }
+
+        .work__introduction {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
     </style>
 
     <style>
@@ -459,6 +464,15 @@
             <span class="section__subtitle">My Portfolio</span>
             <h2 class="section__title">Recent Works</h2>
 
+            <div class="work__introduction">
+                <p class="custom-text">
+                    As a believer in <span class="custom-highlight">learning by doing</span>, I've been working on
+                    personal projects (always for fun) to master technologies I wanted to learn. Along the way,
+                    I've been solving some everyday problems I encountered. These projects reflect some of my journey of
+                    practical learning and problem-solving in AI new stuff .
+                </p>
+            </div>
+
             <div class="work__filters">
                 <span class="work__item active-work" data-filter="all">All</span>
                 <span class="work__item" data-filter=".RAG">RAG</span>
@@ -501,7 +515,15 @@
             </div>
 
         </section>
-
+        <style>
+        .work__introduction {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            text-align: center;
+            color: #888;
+            line-height: 1.6;
+        }
+        </style>
 
 
         <!--=============== CONTACT ===============-->
@@ -546,9 +568,6 @@
                 </li>
                 <li>
                     <a href="#work" class="footer__link">Projects</a>
-                </li>
-                <li>
-                    <a href="#testimonial" class="footer__link">Testimonial</a>
                 </li>
             </ul>
 
