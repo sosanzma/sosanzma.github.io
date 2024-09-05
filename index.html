@@ -36,6 +36,37 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="./assets/css/index-style.min.css">
 
+    <!-- New custom styles -->
+    <style>
+        .custom-text {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            color: #f8f8f2;
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+
+        .custom-text .custom-highlight {
+            background-color: #50fa7b;
+            color: #282a36;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+
+    <style>
+        .services__company {
+            font-size: 0.75em; /* Reducido de 0.85em a 0.75em */
+            color: #888;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -166,10 +197,13 @@
 
                     </div>
 
-                    <p class="about__description">
-                        👋 Hola! As an IA Engineer & Data Scientist, I'm passionate about leveraging advanced technologies
-                        to create innovative solutions. With 3 years of professional experience and a portfolio of
-                        personal projects, I'm constantly exploring new frontiers in AI and data science.
+                    <p class="about__description custom-text">
+                        👋 Hola! I am Manel and I work as an AI Engineer & Data Scientist.
+                        I'm passionate about leveraging advanced technologies and
+                        <span class="custom-highlight">diving into production</span>.
+                        Here you can see my skills and check out some of my personal projects.
+
+
                     </p>
 
 
@@ -314,16 +348,18 @@
 
         </section>
 
-        <!--=============== SERVICES ===============-->
+        <!--=============== WORK EXPERIENCE ===============-->
         <section class="services section">
-            <span class="section__subtitle">My Services</span>
-            <h2 class="section__title">What I Offer</h2>
+            <span class="section__subtitle">My Career</span>
+            <h2 class="section__title">Work Experience</h2>
 
             <div class="services__container container grid">
-
-
                 <div class="services__card">
-                    <h3 class="services__title">Multi-Agent Systems <br> & LLM Chats</h3>
+                    <h3 class="services__title">
+                        AI Engineer
+                        <br>
+                        <span class="services__company">- VRAIN</span>
+                    </h3>
 
                     <span class="services__button">
                         See more<i class='bx bx-right-arrow-alt services__icon'></i>
@@ -333,39 +369,89 @@
                         <div class="services__modal-content">
                             <i class='bx bx-x services__modal-close'></i>
 
-                            <h3 class="services__modal-title">Multi-Agent Systems & LLM Chats</h3>
+                            <h3 class="services__modal-title">AI Engineer at VRAIN</h3>
                             <p class="services__modal-description">
-                                Leveraging cutting-edge AI technologies to create intelligent and interactive systems.
+                                Valencian Research Institute for Artificial Intelligence (Feb 2024 - Present)
                             </p>
                             <ul class="services__modal-list">
                                 <li class="services__modal-item">
                                     <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
-                                        Design and implementation of multi-agent systems
+                                        Developing artifacts for SPADE (Smart Python Agent Development Environment)
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
                                     <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
-                                        Development of advanced LLM-based chat systems
+                                        Creating tools for agents in multi-agent systems
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
                                     <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
-                                        Implementation of RAG techniques for enhanced performance
+                                        Enhancing agent capabilities and interactions
                                     </p>
                                 </li>
                                 <li class="services__modal-item">
                                     <i class='bx bx-check services__modal-icon'></i>
                                     <p class="services__modal-info">
-                                        Fine-tuning of language models for specific applications
+                                        Advancing agent-based software engineering
                                     </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">
+                        Data Scientist
+                        <br>
+                        <span class="services__company">- Solver Intelligent Analytics</span>
+                    </h3>
+
+                    <span class="services__button">
+                        See more<i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Data Scientist at Solver Intelligent Analytics</h3>
+                            <p class="services__modal-description">
+                                Feb 2023 - Feb 2024 (1 year 1 month)
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Data Science Techniques: ETL, Feature Engineering, Visualization
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Machine Learning: Clustering, Demand Forecasting, Attribution Modeling
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Advanced ML: Delay Forecasting, Classification, Regression
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Deployment & Workflow: AWS, Docker, Airflow, Jenkins
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--=============== WORK ===============-->
