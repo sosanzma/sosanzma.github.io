@@ -47,3 +47,22 @@ section {
 h2 {
     color: #ff79c6;
 }
+
+.custom-text {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    color: #f8f8f2; /* Light text color for dark background */
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.custom-text .custom-highlight {
+    background-color: #50fa7b; /* A brighter color for better contrast */
+    color: #282a36; /* Dark text on light background */
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
